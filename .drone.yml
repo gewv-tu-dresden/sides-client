@@ -11,8 +11,9 @@ steps:
 
 
 - name: publish
-  image: python3.6
+  image: plugins/pypi
+  username:
+      from_secret: username
+    password:
+      from_secret: password
   failure: ignore
-  commands:
-  - python3 -m build
-  - python3 -m twine upload dist/*
