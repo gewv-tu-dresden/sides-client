@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@openapitools/openapi-generator-cli": "^2.3.10"
+  },
+  "scripts": {
+    "build": "yarn run openapi-generator-cli generate -i https://tek-ekg.iet.mw.tu-dresden.de/api/v1/api-docs -g python -o . --git-user-id 'karlTGA'  --git-repo-id 'gewv-tu-dresden/sides-client' --release-note 'init'"
+  }
+}
