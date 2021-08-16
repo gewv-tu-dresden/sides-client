@@ -1,0 +1,18 @@
+kind: pipeline
+name: default
+
+steps:
+- name: test
+  image: python3.6
+  commands:
+  - pip install -r requirements.txt
+  - pip install -r test-requirements.txt
+  - pytest --cov=gewv_sides_client
+
+
+- name: publish
+  image: python3.6
+  failure: ignore
+  commands:
+  - python3 -m build
+  - python3 -m twine upload dist/*
