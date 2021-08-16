@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.fieldtest import Fieldtest
+import gewv_sides_client
+from gewv_sides_client.model.fieldtest import Fieldtest
 globals()['Fieldtest'] = Fieldtest
-from openapi_client.model.array_of_fieldtests import ArrayOfFieldtests
+from gewv_sides_client.model.array_of_fieldtests import ArrayOfFieldtests
 
 
 class TestArrayOfFieldtests(unittest.TestCase):

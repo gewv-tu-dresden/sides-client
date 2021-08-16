@@ -10,8 +10,8 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.api.buildings_api import BuildingsApi  # noqa: E501
+import gewv_sides_client
+from gewv_sides_client.api.buildings_api import BuildingsApi  # noqa: E501
 
 
 class TestBuildingsApi(unittest.TestCase):

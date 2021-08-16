@@ -10,8 +10,8 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.api.meters_api import MetersApi  # noqa: E501
+import gewv_sides_client
+from gewv_sides_client.api.meters_api import MetersApi  # noqa: E501
 
 
 class TestMetersApi(unittest.TestCase):

@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.measur_service import MeasurService
+import gewv_sides_client
+from gewv_sides_client.model.measur_service import MeasurService
 globals()['MeasurService'] = MeasurService
-from openapi_client.model.array_of_measur_services import ArrayOfMeasurServices
+from gewv_sides_client.model.array_of_measur_services import ArrayOfMeasurServices
 
 
 class TestArrayOfMeasurServices(unittest.TestCase):

@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.reading import Reading
+import gewv_sides_client
+from gewv_sides_client.model.reading import Reading
 globals()['Reading'] = Reading
-from openapi_client.model.array_of_readings import ArrayOfReadings
+from gewv_sides_client.model.array_of_readings import ArrayOfReadings
 
 
 class TestArrayOfReadings(unittest.TestCase):

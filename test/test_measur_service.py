@@ -11,18 +11,18 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.id import ID
-from openapi_client.model.measur_service_all_of import MeasurServiceAllOf
-from openapi_client.model.measur_service_prototype import MeasurServicePrototype
-from openapi_client.model.service_state import ServiceState
-from openapi_client.model.service_type import ServiceType
+import gewv_sides_client
+from gewv_sides_client.model.id import ID
+from gewv_sides_client.model.measur_service_all_of import MeasurServiceAllOf
+from gewv_sides_client.model.measur_service_prototype import MeasurServicePrototype
+from gewv_sides_client.model.service_state import ServiceState
+from gewv_sides_client.model.service_type import ServiceType
 globals()['ID'] = ID
 globals()['MeasurServiceAllOf'] = MeasurServiceAllOf
 globals()['MeasurServicePrototype'] = MeasurServicePrototype
 globals()['ServiceState'] = ServiceState
 globals()['ServiceType'] = ServiceType
-from openapi_client.model.measur_service import MeasurService
+from gewv_sides_client.model.measur_service import MeasurService
 
 
 class TestMeasurService(unittest.TestCase):

@@ -1,4 +1,4 @@
-# openapi_client.AnalyticsApi
+# gewv_sides_client.AnalyticsApi
 
 All URIs are relative to *https://tek-ekg.iet.mw.tu-dresden.de/api/v1*
 
@@ -20,13 +20,13 @@ Get datalosses in percent of a time.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import analytics_api
-from openapi_client.model.inline_object1 import InlineObject1
+import gewv_sides_client
+from gewv_sides_client.api import analytics_api
+from gewv_sides_client.model.inline_object1 import InlineObject1
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -36,13 +36,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = analytics_api.AnalyticsApi(api_client)
     inline_object1 = InlineObject1(
@@ -54,7 +54,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.get_datalosses(inline_object1)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling AnalyticsApi->get_datalosses: %s\n" % e)
 ```
 
@@ -99,13 +99,13 @@ Get the standard performance for a device.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import analytics_api
-from openapi_client.model.inline_object import InlineObject
+import gewv_sides_client
+from gewv_sides_client.api import analytics_api
+from gewv_sides_client.model.inline_object import InlineObject
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -115,13 +115,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = analytics_api.AnalyticsApi(api_client)
     inline_object = InlineObject(
@@ -138,7 +138,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.get_standard_performance(inline_object)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling AnalyticsApi->get_standard_performance: %s\n" % e)
 ```
 

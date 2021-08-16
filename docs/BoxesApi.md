@@ -1,4 +1,4 @@
-# openapi_client.BoxesApi
+# gewv_sides_client.BoxesApi
 
 All URIs are relative to *https://tek-ekg.iet.mw.tu-dresden.de/api/v1*
 
@@ -39,14 +39,14 @@ Create a new box.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.box_prototype import BoxPrototype
-from openapi_client.model.box import Box
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.box import Box
+from gewv_sides_client.model.box_prototype import BoxPrototype
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -56,13 +56,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_prototype = BoxPrototype(
@@ -77,7 +77,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.create_box(box_prototype)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->create_box: %s\n" % e)
 ```
 
@@ -123,15 +123,15 @@ Create a new log for a service.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.log import Log
-from openapi_client.model.log_prototype import LogPrototype
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.log_prototype import LogPrototype
+from gewv_sides_client.model.log import Log
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -141,13 +141,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = ID(1) # ID | 
@@ -162,7 +162,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.create_log(box_id, measur_service_id, log_prototype)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->create_log: %s\n" % e)
 ```
 
@@ -210,15 +210,15 @@ Create new service for a box
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.measur_service import MeasurService
-from openapi_client.model.measur_service_prototype import MeasurServicePrototype
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.measur_service import MeasurService
+from gewv_sides_client.model.measur_service_prototype import MeasurServicePrototype
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -228,13 +228,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = ID(1) # ID | 
@@ -244,7 +244,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.create_measur_service(box_id, measur_service_prototype)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->create_measur_service: %s\n" % e)
 ```
 
@@ -291,13 +291,13 @@ Delete a variable of application.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.inline_object5 import InlineObject5
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.inline_object5 import InlineObject5
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -307,13 +307,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     application_name = "TEK_EKG_EL" # str | 
@@ -325,7 +325,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.delete_application_variable(application_name, inline_object5)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->delete_application_variable: %s\n" % e)
 ```
 
@@ -372,13 +372,13 @@ Delete a box
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -388,13 +388,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = ID(1) # ID | 
@@ -402,7 +402,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.delete_box(box_id)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->delete_box: %s\n" % e)
 ```
 
@@ -447,14 +447,14 @@ Delete a variable of box.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.inline_object3 import InlineObject3
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.inline_object3 import InlineObject3
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -464,13 +464,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = ID(1) # ID | 
@@ -482,7 +482,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.delete_box_variable(box_id, inline_object3)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->delete_box_variable: %s\n" % e)
 ```
 
@@ -529,13 +529,13 @@ Delete a measure service.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -545,13 +545,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = ID(1) # ID | 
@@ -560,7 +560,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.delete_measur_service(box_id, measur_service_id)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->delete_measur_service: %s\n" % e)
 ```
 
@@ -606,14 +606,14 @@ Get a box per id
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.box import Box
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.box import Box
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -623,13 +623,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = ID(1) # ID | 
@@ -638,7 +638,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_box(box_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->get_box: %s\n" % e)
 ```
 
@@ -683,13 +683,13 @@ Get config of a box.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -699,13 +699,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = ID(1) # ID | 
@@ -713,7 +713,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.get_box_config(box_id)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->get_box_config: %s\n" % e)
 ```
 
@@ -758,13 +758,13 @@ Get the belonging device of the box.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -774,13 +774,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = ID(1) # ID | 
@@ -788,7 +788,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.get_box_device(box_id)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->get_box_device: %s\n" % e)
 ```
 
@@ -833,12 +833,12 @@ Get a box per id
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -848,13 +848,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = "67ebc7ac3af684556421420dbb6570be" # str | 
@@ -862,7 +862,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.get_box_legacy(box_id)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->get_box_legacy: %s\n" % e)
 ```
 
@@ -907,13 +907,13 @@ Get variables of a box.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -923,13 +923,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = ID(1) # ID | 
@@ -937,7 +937,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.get_box_variables(box_id)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->get_box_variables: %s\n" % e)
 ```
 
@@ -982,14 +982,14 @@ Get boxes.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.array_of_boxes import ArrayOfBoxes
-from openapi_client.model.energy_type import EnergyType
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.array_of_boxes import ArrayOfBoxes
+from gewv_sides_client.model.energy_type import EnergyType
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -999,13 +999,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     enery_type = EnergyType("electrical") # EnergyType | the energy type of the device (optional)
@@ -1016,7 +1016,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_boxes(enery_type=enery_type, hardware_id=hardware_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->get_boxes: %s\n" % e)
 ```
 
@@ -1062,14 +1062,14 @@ Get boxes.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.array_of_fieldtests import ArrayOfFieldtests
-from openapi_client.model.energy_type import EnergyType
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.energy_type import EnergyType
+from gewv_sides_client.model.array_of_fieldtests import ArrayOfFieldtests
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -1079,13 +1079,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     enery_type = EnergyType("electrical") # EnergyType | the energy type of the device (optional)
@@ -1095,7 +1095,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_boxes_legacy(enery_type=enery_type)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->get_boxes_legacy: %s\n" % e)
 ```
 
@@ -1140,14 +1140,14 @@ Get the connected boxes of the device.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.box import Box
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.box import Box
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -1157,13 +1157,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     building_id = ID(1) # ID | 
@@ -1173,7 +1173,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_boxes_of_datapoint(building_id, device_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->get_boxes_of_datapoint: %s\n" % e)
 ```
 
@@ -1219,14 +1219,14 @@ Get all logs of a service.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.array_of_logs import ArrayOfLogs
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.array_of_logs import ArrayOfLogs
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -1236,13 +1236,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = ID(1) # ID | 
@@ -1252,7 +1252,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_logs(box_id, measur_service_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->get_logs: %s\n" % e)
 ```
 
@@ -1298,14 +1298,14 @@ Get the service with the service id
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.measur_service import MeasurService
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.measur_service import MeasurService
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -1315,13 +1315,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = ID(1) # ID | 
@@ -1331,7 +1331,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_measur_service(box_id, measur_service_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->get_measur_service: %s\n" % e)
 ```
 
@@ -1377,15 +1377,15 @@ Get services of a box.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.array_of_measur_services import ArrayOfMeasurServices
-from openapi_client.model.service_type import ServiceType
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.array_of_measur_services import ArrayOfMeasurServices
+from gewv_sides_client.model.service_type import ServiceType
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -1395,13 +1395,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = ID(1) # ID | 
@@ -1411,7 +1411,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_measur_services(box_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->get_measur_services: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -1419,7 +1419,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_measur_services(box_id, service_type=service_type)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->get_measur_services: %s\n" % e)
 ```
 
@@ -1465,15 +1465,15 @@ Update a box
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.box_prototype import BoxPrototype
-from openapi_client.model.box import Box
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.box import Box
+from gewv_sides_client.model.box_prototype import BoxPrototype
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -1483,13 +1483,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = ID(1) # ID | 
@@ -1505,7 +1505,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.update_box(box_id, box_prototype)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->update_box: %s\n" % e)
 ```
 
@@ -1551,14 +1551,14 @@ Update a variable of box.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.inline_object2 import InlineObject2
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.inline_object2 import InlineObject2
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -1568,13 +1568,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = ID(1) # ID | 
@@ -1587,7 +1587,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.update_box_variable(box_id, inline_object2)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->update_box_variable: %s\n" % e)
 ```
 
@@ -1634,15 +1634,15 @@ Update a existing measure service.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import boxes_api
-from openapi_client.model.measur_service_update import MeasurServiceUpdate
-from openapi_client.model.measur_service import MeasurService
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import boxes_api
+from gewv_sides_client.model.measur_service_update import MeasurServiceUpdate
+from gewv_sides_client.model.measur_service import MeasurService
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -1652,13 +1652,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boxes_api.BoxesApi(api_client)
     box_id = ID(1) # ID | 
@@ -1676,7 +1676,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.update_measur_service(box_id, measur_service_id, measur_service_update)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling BoxesApi->update_measur_service: %s\n" % e)
 ```
 

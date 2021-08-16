@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.model.id import ID
 
 
 class TestID(unittest.TestCase):

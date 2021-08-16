@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.log import Log
+import gewv_sides_client
+from gewv_sides_client.model.log import Log
 globals()['Log'] = Log
-from openapi_client.model.array_of_logs import ArrayOfLogs
+from gewv_sides_client.model.array_of_logs import ArrayOfLogs
 
 
 class TestArrayOfLogs(unittest.TestCase):

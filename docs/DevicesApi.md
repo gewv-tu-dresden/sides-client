@@ -1,4 +1,4 @@
-# openapi_client.DevicesApi
+# gewv_sides_client.DevicesApi
 
 All URIs are relative to *https://tek-ekg.iet.mw.tu-dresden.de/api/v1*
 
@@ -25,14 +25,14 @@ Create a new device for a building.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import devices_api
-from openapi_client.model.id import ID
-from openapi_client.model.device import Device
+import gewv_sides_client
+from gewv_sides_client.api import devices_api
+from gewv_sides_client.model.device import Device
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -42,13 +42,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = devices_api.DevicesApi(api_client)
     building_id = ID(1) # ID | 
@@ -71,7 +71,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.create_device(building_id, device)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling DevicesApi->create_device: %s\n" % e)
 ```
 
@@ -118,13 +118,13 @@ Delete a contact.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import devices_api
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import devices_api
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -134,13 +134,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = devices_api.DevicesApi(api_client)
     building_id = ID(1) # ID | 
@@ -149,7 +149,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.delete_device(building_id, device_id)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling DevicesApi->delete_device: %s\n" % e)
 ```
 
@@ -196,14 +196,14 @@ Get the connected boxes of the device.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import devices_api
-from openapi_client.model.box import Box
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import devices_api
+from gewv_sides_client.model.box import Box
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -213,13 +213,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = devices_api.DevicesApi(api_client)
     building_id = ID(1) # ID | 
@@ -229,7 +229,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_boxes_of_datapoint(building_id, device_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling DevicesApi->get_boxes_of_datapoint: %s\n" % e)
 ```
 
@@ -275,13 +275,13 @@ Get datapoint names of the connected boxes.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import devices_api
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import devices_api
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -291,13 +291,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = devices_api.DevicesApi(api_client)
     building_id = ID(1) # ID | 
@@ -307,7 +307,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_datapoint_names(building_id, device_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling DevicesApi->get_datapoint_names: %s\n" % e)
 ```
 
@@ -353,14 +353,14 @@ Get a device.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import devices_api
-from openapi_client.model.id import ID
-from openapi_client.model.device import Device
+import gewv_sides_client
+from gewv_sides_client.api import devices_api
+from gewv_sides_client.model.device import Device
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -370,13 +370,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = devices_api.DevicesApi(api_client)
     building_id = ID(1) # ID | 
@@ -400,7 +400,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_device(building_id, device_id, device)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling DevicesApi->get_device: %s\n" % e)
 ```
 
@@ -448,14 +448,14 @@ Get all devices of a building.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import devices_api
-from openapi_client.model.array_of_devices import ArrayOfDevices
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import devices_api
+from gewv_sides_client.model.array_of_devices import ArrayOfDevices
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -465,13 +465,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = devices_api.DevicesApi(api_client)
     building_id = ID(1) # ID | 
@@ -480,7 +480,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_devices(building_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling DevicesApi->get_devices: %s\n" % e)
 ```
 
@@ -525,14 +525,14 @@ Update a existing device.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import devices_api
-from openapi_client.model.id import ID
-from openapi_client.model.device import Device
+import gewv_sides_client
+from gewv_sides_client.api import devices_api
+from gewv_sides_client.model.device import Device
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -542,13 +542,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = devices_api.DevicesApi(api_client)
     building_id = ID(1) # ID | 
@@ -572,7 +572,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.update_device(building_id, device_id, device)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling DevicesApi->update_device: %s\n" % e)
 ```
 

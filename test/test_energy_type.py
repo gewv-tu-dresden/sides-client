@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.energy_type import EnergyType
+import gewv_sides_client
+from gewv_sides_client.model.energy_type import EnergyType
 
 
 class TestEnergyType(unittest.TestCase):

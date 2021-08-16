@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.building import Building
+import gewv_sides_client
+from gewv_sides_client.model.building import Building
 globals()['Building'] = Building
-from openapi_client.model.array_of_buildings import ArrayOfBuildings
+from gewv_sides_client.model.array_of_buildings import ArrayOfBuildings
 
 
 class TestArrayOfBuildings(unittest.TestCase):

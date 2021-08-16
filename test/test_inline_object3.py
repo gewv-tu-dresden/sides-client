@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.inline_object3 import InlineObject3
+import gewv_sides_client
+from gewv_sides_client.model.inline_object3 import InlineObject3
 
 
 class TestInlineObject3(unittest.TestCase):

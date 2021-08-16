@@ -11,16 +11,16 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.id import ID
-from openapi_client.model.log_all_of import LogAllOf
-from openapi_client.model.log_level import LogLevel
-from openapi_client.model.log_prototype import LogPrototype
+import gewv_sides_client
+from gewv_sides_client.model.id import ID
+from gewv_sides_client.model.log_all_of import LogAllOf
+from gewv_sides_client.model.log_level import LogLevel
+from gewv_sides_client.model.log_prototype import LogPrototype
 globals()['ID'] = ID
 globals()['LogAllOf'] = LogAllOf
 globals()['LogLevel'] = LogLevel
 globals()['LogPrototype'] = LogPrototype
-from openapi_client.model.log import Log
+from gewv_sides_client.model.log import Log
 
 
 class TestLog(unittest.TestCase):

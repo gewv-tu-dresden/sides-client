@@ -1,4 +1,4 @@
-# openapi_client.AuthApi
+# gewv_sides_client.AuthApi
 
 All URIs are relative to *https://tek-ekg.iet.mw.tu-dresden.de/api/v1*
 
@@ -20,12 +20,12 @@ Login to frontend.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import auth_api
+import gewv_sides_client
+from gewv_sides_client.api import auth_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -35,13 +35,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = auth_api.AuthApi(api_client)
     return_to = "returnTo_example" # str | 
@@ -49,7 +49,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.login(return_to)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling AuthApi->login: %s\n" % e)
 ```
 
@@ -94,12 +94,12 @@ Log out from frontend.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import auth_api
+import gewv_sides_client
+from gewv_sides_client.api import auth_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -109,20 +109,20 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = auth_api.AuthApi(api_client)
 
     # example, this endpoint has no required or optional parameters
     try:
         api_instance.logout()
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling AuthApi->logout: %s\n" % e)
 ```
 

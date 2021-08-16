@@ -1,4 +1,4 @@
-# openapi_client.ApplicationsApi
+# gewv_sides_client.ApplicationsApi
 
 All URIs are relative to *https://tek-ekg.iet.mw.tu-dresden.de/api/v1*
 
@@ -27,12 +27,12 @@ Create a new configuration file.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import applications_api
+import gewv_sides_client
+from gewv_sides_client.api import applications_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -42,13 +42,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = applications_api.ApplicationsApi(api_client)
     application_name = "TEK_EKG_EL" # str | 
@@ -57,7 +57,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.create_configuration_file(application_name, configuration_filename)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling ApplicationsApi->create_configuration_file: %s\n" % e)
 ```
 
@@ -104,12 +104,12 @@ Get a application per name.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import applications_api
+import gewv_sides_client
+from gewv_sides_client.api import applications_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -119,13 +119,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = applications_api.ApplicationsApi(api_client)
     application_name = "TEK_EKG_EL" # str | 
@@ -133,7 +133,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.get_application(application_name)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling ApplicationsApi->get_application: %s\n" % e)
 ```
 
@@ -178,12 +178,12 @@ Get the list of configs of the application.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import applications_api
+import gewv_sides_client
+from gewv_sides_client.api import applications_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -193,13 +193,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = applications_api.ApplicationsApi(api_client)
     application_name = "TEK_EKG_EL" # str | 
@@ -207,7 +207,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.get_application_configs(application_name)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling ApplicationsApi->get_application_configs: %s\n" % e)
 ```
 
@@ -252,12 +252,12 @@ Get variables of a application.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import applications_api
+import gewv_sides_client
+from gewv_sides_client.api import applications_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -267,13 +267,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = applications_api.ApplicationsApi(api_client)
     application_name = "TEK_EKG_EL" # str | 
@@ -281,7 +281,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.get_application_variables(application_name)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling ApplicationsApi->get_application_variables: %s\n" % e)
 ```
 
@@ -326,12 +326,12 @@ Get applications.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import applications_api
+import gewv_sides_client
+from gewv_sides_client.api import applications_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -341,20 +341,20 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = applications_api.ApplicationsApi(api_client)
 
     # example, this endpoint has no required or optional parameters
     try:
         api_instance.get_applications()
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling ApplicationsApi->get_applications: %s\n" % e)
 ```
 
@@ -396,12 +396,12 @@ Get configuration file of the application.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import applications_api
+import gewv_sides_client
+from gewv_sides_client.api import applications_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -411,13 +411,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = applications_api.ApplicationsApi(api_client)
     application_name = "TEK_EKG_EL" # str | 
@@ -426,7 +426,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.get_configuration_file(application_name, configuration_filename)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling ApplicationsApi->get_configuration_file: %s\n" % e)
 ```
 
@@ -473,13 +473,13 @@ Trigger a action for the application.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import applications_api
-from openapi_client.model.inline_object6 import InlineObject6
+import gewv_sides_client
+from gewv_sides_client.api import applications_api
+from gewv_sides_client.model.inline_object6 import InlineObject6
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -489,13 +489,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = applications_api.ApplicationsApi(api_client)
     application_name = "TEK_EKG_EL" # str | 
@@ -506,7 +506,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.trigger_application_action(application_name, inline_object6)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling ApplicationsApi->trigger_application_action: %s\n" % e)
 ```
 
@@ -553,13 +553,13 @@ Update a variable of application.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import applications_api
-from openapi_client.model.inline_object4 import InlineObject4
+import gewv_sides_client
+from gewv_sides_client.api import applications_api
+from gewv_sides_client.model.inline_object4 import InlineObject4
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -569,13 +569,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = applications_api.ApplicationsApi(api_client)
     application_name = "TEK_EKG_EL" # str | 
@@ -588,7 +588,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.update_application_variable(application_name, inline_object4)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling ApplicationsApi->update_application_variable: %s\n" % e)
 ```
 
@@ -635,12 +635,12 @@ Update a configuration.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import applications_api
+import gewv_sides_client
+from gewv_sides_client.api import applications_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -650,13 +650,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = applications_api.ApplicationsApi(api_client)
     application_name = "TEK_EKG_EL" # str | 
@@ -665,7 +665,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.update_configuration_file(application_name, configuration_filename)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling ApplicationsApi->update_configuration_file: %s\n" % e)
 ```
 

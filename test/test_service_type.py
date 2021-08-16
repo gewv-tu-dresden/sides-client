@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.service_type import ServiceType
+import gewv_sides_client
+from gewv_sides_client.model.service_type import ServiceType
 
 
 class TestServiceType(unittest.TestCase):

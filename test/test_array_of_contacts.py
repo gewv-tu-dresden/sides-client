@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.contact import Contact
+import gewv_sides_client
+from gewv_sides_client.model.contact import Contact
 globals()['Contact'] = Contact
-from openapi_client.model.array_of_contacts import ArrayOfContacts
+from gewv_sides_client.model.array_of_contacts import ArrayOfContacts
 
 
 class TestArrayOfContacts(unittest.TestCase):

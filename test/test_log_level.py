@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.log_level import LogLevel
+import gewv_sides_client
+from gewv_sides_client.model.log_level import LogLevel
 
 
 class TestLogLevel(unittest.TestCase):

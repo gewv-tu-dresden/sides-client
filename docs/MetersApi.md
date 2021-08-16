@@ -1,4 +1,4 @@
-# openapi_client.MetersApi
+# gewv_sides_client.MetersApi
 
 All URIs are relative to *https://tek-ekg.iet.mw.tu-dresden.de/api/v1*
 
@@ -22,14 +22,14 @@ Create a new reading for a meter.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import meters_api
-from openapi_client.model.id import ID
-from openapi_client.model.reading import Reading
+import gewv_sides_client
+from gewv_sides_client.api import meters_api
+from gewv_sides_client.model.reading import Reading
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -39,13 +39,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = meters_api.MetersApi(api_client)
     meter_id = ID(1) # ID | 
@@ -58,7 +58,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.create_reading(meter_id, reading)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling MetersApi->create_reading: %s\n" % e)
 ```
 
@@ -105,14 +105,14 @@ Delete a reading of a meter.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import meters_api
-from openapi_client.model.building import Building
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import meters_api
+from gewv_sides_client.model.building import Building
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -122,13 +122,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = meters_api.MetersApi(api_client)
     meter_id = ID(1) # ID | 
@@ -138,7 +138,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.delete_reading(meter_id, reading_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling MetersApi->delete_reading: %s\n" % e)
 ```
 
@@ -185,14 +185,14 @@ Get all readings of meter.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import meters_api
-from openapi_client.model.array_of_readings import ArrayOfReadings
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import meters_api
+from gewv_sides_client.model.array_of_readings import ArrayOfReadings
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -202,13 +202,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = meters_api.MetersApi(api_client)
     meter_id = ID(1) # ID | 
@@ -217,7 +217,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_readings(meter_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling MetersApi->get_readings: %s\n" % e)
 ```
 
@@ -262,14 +262,14 @@ Create or update a new reading for a meter.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import meters_api
-from openapi_client.model.id import ID
-from openapi_client.model.reading import Reading
+import gewv_sides_client
+from gewv_sides_client.api import meters_api
+from gewv_sides_client.model.reading import Reading
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -279,13 +279,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = meters_api.MetersApi(api_client)
     meter_id = ID(1) # ID | 
@@ -299,7 +299,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.upsert_reading(meter_id, reading_id, reading)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling MetersApi->upsert_reading: %s\n" % e)
 ```
 

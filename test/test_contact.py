@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.model.id import ID
 globals()['ID'] = ID
-from openapi_client.model.contact import Contact
+from gewv_sides_client.model.contact import Contact
 
 
 class TestContact(unittest.TestCase):

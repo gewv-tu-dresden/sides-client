@@ -11,16 +11,16 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.box_all_of import BoxAllOf
-from openapi_client.model.box_prototype import BoxPrototype
-from openapi_client.model.energy_type import EnergyType
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.model.box_all_of import BoxAllOf
+from gewv_sides_client.model.box_prototype import BoxPrototype
+from gewv_sides_client.model.energy_type import EnergyType
+from gewv_sides_client.model.id import ID
 globals()['BoxAllOf'] = BoxAllOf
 globals()['BoxPrototype'] = BoxPrototype
 globals()['EnergyType'] = EnergyType
 globals()['ID'] = ID
-from openapi_client.model.box import Box
+from gewv_sides_client.model.box import Box
 
 
 class TestBox(unittest.TestCase):

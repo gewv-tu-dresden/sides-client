@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.device import Device
+import gewv_sides_client
+from gewv_sides_client.model.device import Device
 globals()['Device'] = Device
-from openapi_client.model.array_of_devices import ArrayOfDevices
+from gewv_sides_client.model.array_of_devices import ArrayOfDevices
 
 
 class TestArrayOfDevices(unittest.TestCase):

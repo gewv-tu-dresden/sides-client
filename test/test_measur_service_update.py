@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.service_state import ServiceState
+import gewv_sides_client
+from gewv_sides_client.model.service_state import ServiceState
 globals()['ServiceState'] = ServiceState
-from openapi_client.model.measur_service_update import MeasurServiceUpdate
+from gewv_sides_client.model.measur_service_update import MeasurServiceUpdate
 
 
 class TestMeasurServiceUpdate(unittest.TestCase):

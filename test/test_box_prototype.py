@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.energy_type import EnergyType
+import gewv_sides_client
+from gewv_sides_client.model.energy_type import EnergyType
 globals()['EnergyType'] = EnergyType
-from openapi_client.model.box_prototype import BoxPrototype
+from gewv_sides_client.model.box_prototype import BoxPrototype
 
 
 class TestBoxPrototype(unittest.TestCase):

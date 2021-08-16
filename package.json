@@ -3,6 +3,8 @@
     "@openapitools/openapi-generator-cli": "^2.3.10"
   },
   "scripts": {
-    "build": "yarn run openapi-generator-cli generate -i https://tek-ekg.iet.mw.tu-dresden.de/api/v1/api-docs -g python -o . --git-user-id 'karlTGA'  --git-repo-id 'gewv-tu-dresden/sides-client' --release-note 'init'"
+    "build": "yarn run openapi-generator-cli generate -i https://tek-ekg.iet.mw.tu-dresden.de/api/v1/api-docs -g python -o . --additional-properties=projectName=gewv-sides-client,packageName=gewv_sides_client",
+    "bundle": "python3 -m build",
+    "push": "python3 -m twine upload dist/*"
   }
 }

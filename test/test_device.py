@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.energy_type import EnergyType
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.model.energy_type import EnergyType
+from gewv_sides_client.model.id import ID
 globals()['EnergyType'] = EnergyType
 globals()['ID'] = ID
-from openapi_client.model.device import Device
+from gewv_sides_client.model.device import Device
 
 
 class TestDevice(unittest.TestCase):

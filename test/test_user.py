@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.user import User
+import gewv_sides_client
+from gewv_sides_client.model.user import User
 
 
 class TestUser(unittest.TestCase):

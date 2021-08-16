@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.box import Box
+import gewv_sides_client
+from gewv_sides_client.model.box import Box
 globals()['Box'] = Box
-from openapi_client.model.array_of_boxes import ArrayOfBoxes
+from gewv_sides_client.model.array_of_boxes import ArrayOfBoxes
 
 
 class TestArrayOfBoxes(unittest.TestCase):

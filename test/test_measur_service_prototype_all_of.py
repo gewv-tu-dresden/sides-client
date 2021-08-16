@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.service_type import ServiceType
+import gewv_sides_client
+from gewv_sides_client.model.service_type import ServiceType
 globals()['ServiceType'] = ServiceType
-from openapi_client.model.measur_service_prototype_all_of import MeasurServicePrototypeAllOf
+from gewv_sides_client.model.measur_service_prototype_all_of import MeasurServicePrototypeAllOf
 
 
 class TestMeasurServicePrototypeAllOf(unittest.TestCase):

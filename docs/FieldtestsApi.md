@@ -1,4 +1,4 @@
-# openapi_client.FieldtestsApi
+# gewv_sides_client.FieldtestsApi
 
 All URIs are relative to *https://tek-ekg.iet.mw.tu-dresden.de/api/v1*
 
@@ -19,13 +19,13 @@ Get all fieldtests.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import fieldtests_api
-from openapi_client.model.array_of_fieldtests import ArrayOfFieldtests
+import gewv_sides_client
+from gewv_sides_client.api import fieldtests_api
+from gewv_sides_client.model.array_of_fieldtests import ArrayOfFieldtests
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -35,13 +35,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fieldtests_api.FieldtestsApi(api_client)
 
@@ -49,7 +49,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_fieltests()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling FieldtestsApi->get_fieltests: %s\n" % e)
 ```
 

@@ -1,4 +1,4 @@
-# openapi_client.ContactsApi
+# gewv_sides_client.ContactsApi
 
 All URIs are relative to *https://tek-ekg.iet.mw.tu-dresden.de/api/v1*
 
@@ -22,14 +22,14 @@ Create a new contact for a fieldtest.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import contacts_api
-from openapi_client.model.id import ID
-from openapi_client.model.contact import Contact
+import gewv_sides_client
+from gewv_sides_client.api import contacts_api
+from gewv_sides_client.model.contact import Contact
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -39,13 +39,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = contacts_api.ContactsApi(api_client)
     fieldtest_id = ID(1) # ID | 
@@ -59,7 +59,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.create_contact(fieldtest_id, contact)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling ContactsApi->create_contact: %s\n" % e)
 ```
 
@@ -106,13 +106,13 @@ Delete a contact.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import contacts_api
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import contacts_api
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -122,13 +122,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = contacts_api.ContactsApi(api_client)
     fieldtest_id = ID(1) # ID | 
@@ -137,7 +137,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         api_instance.delete_contact(fieldtest_id, contact_id)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling ContactsApi->delete_contact: %s\n" % e)
 ```
 
@@ -184,14 +184,14 @@ Get all contacts of a fieldtest.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import contacts_api
-from openapi_client.model.array_of_contacts import ArrayOfContacts
-from openapi_client.model.id import ID
+import gewv_sides_client
+from gewv_sides_client.api import contacts_api
+from gewv_sides_client.model.array_of_contacts import ArrayOfContacts
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -201,13 +201,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = contacts_api.ContactsApi(api_client)
     fieldtest_id = ID(1) # ID | 
@@ -216,7 +216,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_contacts(fieldtest_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling ContactsApi->get_contacts: %s\n" % e)
 ```
 
@@ -261,14 +261,14 @@ Update a existing contact.
 * Basic Authentication (basicAuth):
 ```python
 import time
-import openapi_client
-from openapi_client.api import contacts_api
-from openapi_client.model.id import ID
-from openapi_client.model.contact import Contact
+import gewv_sides_client
+from gewv_sides_client.api import contacts_api
+from gewv_sides_client.model.contact import Contact
+from gewv_sides_client.model.id import ID
 from pprint import pprint
 # Defining the host is optional and defaults to https://tek-ekg.iet.mw.tu-dresden.de/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     host = "https://tek-ekg.iet.mw.tu-dresden.de/api/v1"
 )
 
@@ -278,13 +278,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = openapi_client.Configuration(
+configuration = gewv_sides_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = contacts_api.ContactsApi(api_client)
     fieldtest_id = ID(1) # ID | 
@@ -299,7 +299,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.update_contact(fieldtest_id, contact_id, contact)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except gewv_sides_client.ApiException as e:
         print("Exception when calling ContactsApi->update_contact: %s\n" % e)
 ```
 
