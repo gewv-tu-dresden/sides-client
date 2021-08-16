@@ -4,8 +4,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**device_id** | [**ID**](ID.md) |  | 
 **name** | **str** |  | 
-**device_id** | [**ID**](ID.md) |  | [optional] 
 **device_type** | **str** |  | [optional] 
 **energy_type** | [**EnergyType**](EnergyType.md) |  | [optional] 
 **description** | **str** |  | [optional] 

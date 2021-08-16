@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **building_type** | **str** |  | 
 **name** | **str** |  | 
-**building_id** | [**ID**](ID.md) |  | [optional] 
+**building_id** | [**ID**](ID.md) |  | 
 **address_id** | [**ID**](ID.md) |  | [optional] 
 **description** | **str** |  | [optional] 
 **construction_year** | **int** |  | [optional] 

@@ -49,11 +49,7 @@ with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = contacts_api.ContactsApi(api_client)
     fieldtest_id = ID(1) # ID | 
-    contact = Contact(
-        name="name_example",
-        email="email_example",
-        phone="phone_example",
-    ) # Contact | The new contact, that will be created!
+    contact = Contact() # Contact | The new contact, that will be created!
 
     # example passing only required values which don't have defaults set
     try:
@@ -289,11 +285,7 @@ with gewv_sides_client.ApiClient(configuration) as api_client:
     api_instance = contacts_api.ContactsApi(api_client)
     fieldtest_id = ID(1) # ID | 
     contact_id = ID(1) # ID | 
-    contact = Contact(
-        name="name_example",
-        email="email_example",
-        phone="phone_example",
-    ) # Contact | The contact to update!
+    contact = Contact() # Contact | The contact to update!
 
     # example passing only required values which don't have defaults set
     try:

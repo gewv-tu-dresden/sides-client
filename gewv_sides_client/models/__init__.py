@@ -21,10 +21,16 @@ from gewv_sides_client.model.box import Box
 from gewv_sides_client.model.box_all_of import BoxAllOf
 from gewv_sides_client.model.box_prototype import BoxPrototype
 from gewv_sides_client.model.building import Building
+from gewv_sides_client.model.building_all_of import BuildingAllOf
+from gewv_sides_client.model.building_prototype import BuildingPrototype
 from gewv_sides_client.model.contact import Contact
+from gewv_sides_client.model.contact_all_of import ContactAllOf
+from gewv_sides_client.model.contact_prototype import ContactPrototype
 from gewv_sides_client.model.device import Device
 from gewv_sides_client.model.energy_type import EnergyType
 from gewv_sides_client.model.fieldtest import Fieldtest
+from gewv_sides_client.model.fieldtest_all_of import FieldtestAllOf
+from gewv_sides_client.model.fieldtest_prototype import FieldtestPrototype
 from gewv_sides_client.model.id import ID
 from gewv_sides_client.model.inline_object import InlineObject
 from gewv_sides_client.model.inline_object1 import InlineObject1

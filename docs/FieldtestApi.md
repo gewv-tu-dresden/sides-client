@@ -46,13 +46,7 @@ configuration = gewv_sides_client.Configuration(
 with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fieldtest_api.FieldtestApi(api_client)
-    fieldtest = Fieldtest(
-        name="name_example",
-        started_at="started_at_example",
-        endet_at="endet_at_example",
-        note="note_example",
-        measurement_db_name="measurement_db_name_example",
-    ) # Fieldtest | The new fieldtest, that will be created!
+    fieldtest = Fieldtest() # Fieldtest | The new fieldtest, that will be created!
 
     # example passing only required values which don't have defaults set
     try:
@@ -206,13 +200,7 @@ with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fieldtest_api.FieldtestApi(api_client)
     fieldtest_id = ID(1) # ID | 
-    fieldtest = Fieldtest(
-        name="name_example",
-        started_at="started_at_example",
-        endet_at="endet_at_example",
-        note="note_example",
-        measurement_db_name="measurement_db_name_example",
-    ) # Fieldtest | The fieldtest to update the existing.
+    fieldtest = Fieldtest() # Fieldtest | The fieldtest to update the existing.
 
     # example passing only required values which don't have defaults set
     try:

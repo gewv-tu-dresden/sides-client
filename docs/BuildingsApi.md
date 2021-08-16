@@ -47,20 +47,7 @@ with gewv_sides_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = buildings_api.BuildingsApi(api_client)
     fieldtest_id = ID(1) # ID | 
-    building = Building(
-        building_type="industry",
-        name="name_example",
-        description="description_example",
-        construction_year=1,
-        footprint=3.14,
-        floor_area=3.14,
-        person_number=1,
-        measurment_started_at="measurment_started_at_example",
-        measurment_ended_at="measurment_ended_at_example",
-        note="note_example",
-        electrical_supply_power=3.14,
-        number_supply_ports=1,
-    ) # Building | The new building, that will be created!
+    building = Building() # Building | The new building, that will be created!
 
     # example passing only required values which don't have defaults set
     try:
